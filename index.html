@@ -79,7 +79,7 @@ header.solid{background:rgba(246,243,236,.92);backdrop-filter:blur(12px);-webkit
 .hero .pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .hero .bgp{position:absolute;inset:0}
 .house{position:absolute;inset:0;will-change:clip-path;background:var(--green)}
-.house img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform}
+.house img{width:100%;height:100%;object-fit:cover;transform:scale(-1.12,1.12);will-change:transform}
 .house::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,26,20,.82),rgba(14,26,20,.25) 55%,rgba(14,26,20,.1));opacity:var(--ov,0)}
 .outline{position:absolute;inset:0;pointer-events:none;overflow:visible}
 .outline path{fill:none;stroke:var(--green);stroke-width:2;opacity:var(--ol,1)}
@@ -479,7 +479,7 @@ function heroUpdate(){const r=hero.getBoundingClientRect(),W=innerWidth,H=innerH
   house.style.clipPath=`polygon(${pts})`;house.style.webkitClipPath=`polygon(${pts})`;
   outline.setAttribute('viewBox',`0 0 ${W} ${H}`);outline.setAttribute('width',W);outline.setAttribute('height',H);
   outPath.setAttribute('d',`M${L-10} ${T+2} L${cx} ${T-roof-12} L${R+10} ${T+2}`);outline.style.setProperty('--ol',String(clamp(1-e*3,0,1)));
-  houseImg.style.transform=`scale(${1.12-e*.12})`;
+  {const k=1.12-e*.12;houseImg.style.transform=`scale(${-k},${k})`}
   house.style.setProperty('--ov',String(clamp((e-.5)*2,0,1)));
   const fade=clamp(1-p*2.6,0,1);heroCopy.style.opacity=fade;heroCopy.style.visibility=fade<.02?'hidden':'visible';
   heroCopy.style.translate=`0 ${-p*60}px`;
