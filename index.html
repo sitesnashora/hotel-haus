@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hotel Haus · Hospedagem no centro de Vila Pavão – ES</title>
+<meta name="description" content="Hotel Haus: hospedagem simples e bem cuidada no centro de Vila Pavão – ES, com café da manhã incluso. Reservas pelo WhatsApp.">
+<meta property="og:title" content="Hotel Haus · Vila Pavão – ES">
+<meta property="og:description" content="Quartos bem cuidados, café da manhã caprichado e atendimento dos proprietários, no centro de Vila Pavão.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1657040899601-fbcc8f6486f6?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="theme-color" content="#1f5a3d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f5a3d'/%3E%3Cpath d='M14 30 32 14l18 16v20H14Z' fill='none' stroke='%23f6f3ec' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M27 50V38h10v12' fill='none' stroke='%23f6f3ec' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1657040899601-fbcc8f6486f6?auto=format&fit=crop&w=1600&h=1100&q=78" fetchpriority="high">
+<style>
+/* Conceito: "Haus" é casa. Letreiro verde da fachada + o enxaimel das casas de tradição alemã/pomerana da região, em traço fino. Calmo, limpo, acolhedor. */
+:root{
+  --paper:#f6f3ec;--paper2:#ece7dc;--white:#fff;
+  --green:#1f5a3d;--green2:#2c7550;--green3:#e3ece5;
+  --wood:#a5714a;--ink:#1c2420;--ink2:#3b4741;--muted:#66726b;
+  --line:rgba(28,36,32,.12);
+  --f-head:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --f-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.22,.8,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;background:var(--paper)}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--f-head);font-weight:400;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--green2)}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green)}
+.eyebrow svg{width:20px;height:20px}
+:focus-visible{outline:3px solid var(--wood);outline-offset:3px;border-radius:8px}
+/* enxaimel: traço fino como textura */
+.fach{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%231f5a3d' stroke-opacity='.09' stroke-width='3'%3E%3Cpath d='M0 0h120v120H0zM60 0v120M0 60h120M0 0l60 60M120 0 60 60M0 120l60-60M120 120 60 60'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* ---------- Header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .35s,box-shadow .35s,color .35s}
+header.solid{background:rgba(246,243,236,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap;color:var(--green)}
+.logo svg{width:36px;height:36px;flex:none}
+.logo b{font-family:var(--f-head);font-weight:400;font-size:1.65rem;line-height:1;color:var(--ink)}
+.logo b i{color:var(--green);font-style:normal}
+.logo small{display:block;font-size:.6rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-weight:600;color:var(--ink2);transition:color .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--green)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--white);color:var(--ink);cursor:pointer;place-items:center;box-shadow:inset 0 0 0 1px var(--line)}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;border-radius:2px;background:currentColor;transition:transform .3s var(--ease),background .2s}
+.menu-btn span{position:relative}.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-open .menu-btn span{background:transparent}.menu-open .menu-btn span::before{top:0;transform:rotate(45deg)}.menu-open .menu-btn span::after{top:0;transform:rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:49;background:var(--paper);display:flex;flex-direction:column;justify-content:center;gap:4px;padding:100px max(26px,env(safe-area-inset-left,0px)) 40px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.menu-open .mobile-menu{opacity:1;visibility:visible}
+.mobile-menu a:not(.btn){font-family:var(--f-head);font-size:2.5rem;text-decoration:none;line-height:1.25}
+.menu-open header{background:transparent!important;box-shadow:none!important;backdrop-filter:none}
+@media (max-width:960px){.nav-links{display:none}.menu-btn{display:grid}.nav-right .btn{display:none}}
+@media (max-width:400px){.logo small{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;border:0;background:var(--green);color:#fff;font-family:var(--f-body);font-weight:700;font-size:1rem;line-height:1.1;text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);background:var(--green2);box-shadow:0 14px 30px -14px rgba(31,90,61,.7)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px rgba(28,36,32,.25)}
+.btn.ghost:hover{background:var(--white)}
+.btn svg{width:19px;height:19px;flex:none}
+
+/* ---------- Hero: a casa abre ---------- */
+.hero{position:relative;height:220vh;height:220svh}
+.hero .pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.hero .bgp{position:absolute;inset:0}
+.house{position:absolute;inset:0;will-change:clip-path;background:var(--green)}
+.house img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform}
+.house::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,30,24,.55),rgba(18,30,24,0) 55%);opacity:var(--ov,0)}
+.outline{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.outline path{fill:none;stroke:var(--green);stroke-width:2;opacity:var(--ol,1)}
+.hero-copy{position:absolute;z-index:3;left:max(20px,calc((100vw - 1200px)/2 + 20px));top:50%;transform:translateY(-44%);width:min(520px,44vw);will-change:opacity,transform}
+.hero h1{font-size:clamp(3rem,6vw,5.4rem);margin:16px 0 20px}
+.lead{font-size:1.12rem;color:var(--ink2);max-width:28em;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.proof span{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);font-weight:600;font-size:.86rem;color:var(--ink2)}
+.proof b{color:var(--green)}
+.welcome{position:absolute;z-index:3;left:0;right:0;bottom:12%;text-align:center;color:#fff;opacity:0;transform:translateY(20px);pointer-events:none;will-change:opacity,transform}
+.welcome h2{font-size:clamp(2.6rem,7vw,6rem);text-shadow:0 10px 40px rgba(0,0,0,.35)}
+.welcome h2 em{color:#cfe8d8}
+.welcome p{margin:10px 0 0;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;opacity:.9}
+.cue{position:absolute;z-index:3;left:max(20px,calc((100vw - 1200px)/2 + 20px));bottom:26px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.cue i{width:28px;height:2px;background:var(--green);animation:cue 1.8s var(--ease) infinite;transform-origin:left}
+@keyframes cue{0%{transform:scaleX(0)}60%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+@media (max-width:900px){
+  .hero{height:200vh;height:200svh}
+  .hero-copy{left:20px;right:20px;width:auto;top:calc(92px + env(safe-area-inset-top,0px));transform:none}
+  .hero h1{font-size:clamp(2.4rem,10.5vw,3.4rem);margin:10px 0 12px}
+  .lead{font-size:.98rem;margin-bottom:16px}
+  .proof{display:none}
+  .actions .btn{flex:1 1 auto;padding:13px 16px}
+  .cue{display:none}
+}
+@media (max-width:900px) and (max-height:720px){.lead{display:none}}
+
+section.s{padding-block:110px;position:relative}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head h2{font-size:clamp(2.4rem,5vw,4rem);margin-top:12px}
+.head p{color:var(--ink2);max-width:27em;margin:0}
+[data-reveal]{transition:transform 1s var(--ease)}
+.js [data-reveal].pre{transform:translateY(40px)}
+
+/* ---------- Comodidades ---------- */
+.amen{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.am{background:var(--white);border-radius:22px;padding:22px;box-shadow:inset 0 0 0 1px var(--line);transition:transform .45s var(--ease),box-shadow .45s}
+.am:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px rgba(31,90,61,.35),0 20px 40px -26px rgba(31,90,61,.5)}
+.am .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--green3);color:var(--green);margin-bottom:14px}
+.am .ic svg{width:22px;height:22px}
+.am b{display:block;font-weight:700;line-height:1.3}
+.am span{display:block;color:var(--muted);font-size:.88rem;margin-top:4px;line-height:1.45}
+.fine{color:var(--muted);font-size:.84rem;margin-top:16px}
+@media (max-width:900px){.amen{grid-template-columns:1fr 1fr;gap:10px}.am{padding:16px;border-radius:18px}.am .ic{width:40px;height:40px;margin-bottom:10px}.am span{font-size:.82rem}}
+
+/* ---------- Café (slider) ---------- */
+.cafe{background:var(--green);color:#fff;overflow:hidden}
+.cafe .head p{color:#d4e6da}
+.cafe .eyebrow{color:#cfe8d8}
+.cafe h2 em{color:#cfe8d8}
+.slider{position:relative}
+.track{display:flex;gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:max(20px,calc((100vw - 1200px)/2 + 20px));padding:10px max(20px,calc((100vw - 1200px)/2 + 20px)) 30px;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
+.track::-webkit-scrollbar{display:none}
+.track.dragging{cursor:grabbing;scroll-snap-type:none}
+.track.dragging *{pointer-events:none}
+.slide{flex:0 0 clamp(250px,30vw,380px);scroll-snap-align:start;contain:layout paint}
+.slide .ph{position:relative;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:#174630;transform:scale(.95);transition:transform .6s var(--ease)}
+.slide.active .ph{transform:scale(1)}
+.slide img{width:120%;height:100%;max-width:none;object-fit:cover;margin-left:-10%;will-change:transform}
+.slide h3{font-size:1.8rem;margin:16px 4px 2px}
+.slide p{margin:0 4px;color:#d4e6da;font-size:.94rem}
+.s-ui{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.prog{flex:1;max-width:320px;height:3px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:#fff;transition:width .2s linear}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:0;background:#fff;color:var(--green);cursor:pointer;display:grid;place-items:center;transition:transform .3s var(--ease),opacity .3s}
+.arrows button:hover{transform:scale(1.07)}
+.arrows button:disabled{opacity:.35;cursor:default;transform:none}
+.arrows svg{width:20px;height:20px}
+.cafe .fine{color:#b9d4c3}
+@media (max-width:760px){.slide{flex-basis:74%}.arrows button{width:44px;height:44px}.arrows{margin-right:64px}}
+
+/* ---------- Reserva ---------- */
+.book{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:start}
+.form{background:var(--white);border-radius:28px;padding:30px;box-shadow:inset 0 0 0 1px var(--line);min-width:0}
+.fg{margin-bottom:22px}
+.fg:last-child{margin-bottom:0}
+.fl{display:block;font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dates label{min-width:0;display:block}.dates input{min-width:0;max-width:100%}
+@media (max-width:420px){.dates{gap:8px}.form input[type=date]{font-size:.9rem;padding:12px 10px}}
+.form input[type=date],.form input[type=text]{width:100%;font-family:var(--f-body);font-size:1rem;padding:13px 14px;border-radius:14px;border:0;background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.form input:focus{outline:none;box-shadow:inset 0 0 0 2px var(--green)}
+.guests{display:flex;align-items:center;justify-content:space-between;background:var(--paper);border-radius:14px;padding:10px 14px;box-shadow:inset 0 0 0 1px var(--line)}
+.guests b{font-weight:700}
+.step{display:flex;align-items:center;gap:4px}
+.step button{width:36px;height:36px;border-radius:50%;border:0;background:var(--white);color:var(--ink);font-size:1.2rem;cursor:pointer;display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--line);transition:background .2s}
+.step button:hover{background:var(--green3)}
+.step button:disabled{opacity:.35;cursor:default}
+.step output{min-width:30px;text-align:center;font-weight:800;font-size:1.1rem}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.rooms label{position:relative;cursor:pointer}
+.rooms input{position:absolute;opacity:0;pointer-events:none}
+.rooms .rc{display:block;border-radius:16px;overflow:hidden;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow .25s,transform .3s var(--ease)}
+.rooms .rc img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.rooms .rc b{display:block;padding:9px 11px 10px;font-weight:700;font-size:.9rem;line-height:1.25}
+.rooms .rc small{display:block;font-weight:500;color:var(--muted);font-size:.76rem}
+.rooms label:hover .rc{transform:translateY(-2px)}
+.rooms input:checked+.rc{box-shadow:inset 0 0 0 2.5px var(--green)}
+.rooms input:focus-visible+.rc{outline:3px solid var(--wood);outline-offset:2px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills label{position:relative;cursor:pointer}
+.pills input{position:absolute;opacity:0;pointer-events:none}
+.pills span{display:inline-block;padding:9px 15px;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font-weight:600;font-size:.92rem;transition:background .2s,color .2s}
+.pills input:checked+span{background:var(--green);color:#fff;box-shadow:none}
+.ticket{position:sticky;top:100px;background:var(--ink);color:#f3efe6;border-radius:28px;padding:28px;overflow:hidden}
+.ticket::before{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.12' stroke-width='2'%3E%3Cpath d='M0 0h60v60H0zM30 0v60M0 30h60M0 0l30 30M60 0 30 30M0 60l30-30M60 60 30 30'/%3E%3C/g%3E%3C/svg%3E")}
+.ticket .eyebrow{color:#a9d3b8}
+.ticket h3{font-size:2.4rem;margin:8px 0 4px;position:relative}
+.ticket .nights{font-weight:600;color:#cfd6d1;margin:0 0 18px}
+.tl{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:8px;position:relative}
+.tl li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(255,255,255,.16);padding-bottom:8px;font-size:.95rem}
+.tl li span:first-child{color:#aab6af}
+.tl li span:last-child{font-weight:700;text-align:right}
+.ticket .btn{width:100%;background:#25d366;color:#05351a;white-space:normal}
+.ticket .btn:hover{background:#3be07a;box-shadow:none}
+.ticket small{display:block;margin-top:12px;color:#aab6af;font-size:.78rem;text-align:center;position:relative}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:0 0 18px;position:relative}
+.cal i{height:8px;border-radius:3px;background:rgba(255,255,255,.12);transition:background .3s}
+.cal i.on{background:#7fc79a}
+@media (max-width:900px){.book{grid-template-columns:1fr}.ticket{position:relative;top:auto}.form{padding:20px}.rooms{grid-template-columns:repeat(3,1fr);gap:8px}.rooms .rc b{font-size:.8rem;padding:7px 8px}.rooms .rc small{display:none}}
+
+/* ---------- Avaliações (slider de cartões) ---------- */
+.revs{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.score{background:var(--white);border-radius:26px;padding:28px 30px;box-shadow:inset 0 0 0 1px var(--line);text-align:center;min-width:220px}
+.score b{display:block;font-family:var(--f-head);font-size:5rem;line-height:.9;color:var(--green)}
+.score span{display:block;color:var(--wood);letter-spacing:3px;margin:8px 0 4px}
+.score small{color:var(--muted);font-weight:600}
+.rtrack{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 18px;-webkit-overflow-scrolling:touch}
+.rtrack::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(340px,82%);scroll-snap-align:start;background:var(--white);border-radius:22px;padding:22px;box-shadow:inset 0 0 0 1px var(--line);margin:0}
+.rv .st{color:var(--wood);letter-spacing:2px;font-size:.9rem}
+.rv p{margin:8px 0 12px;font-size:1rem;line-height:1.55}
+.rv small{color:var(--muted);font-weight:600;font-size:.8rem}
+@media (max-width:860px){.revs{grid-template-columns:1fr;gap:18px}.score{display:flex;align-items:center;gap:16px;text-align:left;padding:18px 22px}.score b{font-size:3.4rem}.score span{margin:0}}
+
+/* ---------- Local ---------- */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:var(--white);border-radius:28px;padding:32px;box-shadow:inset 0 0 0 1px var(--line);min-width:0}
+.box h3{font-size:2.3rem;margin:12px 0 18px}
+.facts{display:grid;gap:16px;margin-bottom:22px}
+.fact{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:center}
+.fact .ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--green3);color:var(--green)}
+.fact .ic svg{width:19px;height:19px}
+.fact p{margin:0}
+.fact b{display:block;line-height:1.3}
+.fact span{color:var(--muted);font-size:.93rem}
+.copy{font-family:var(--f-body);font-weight:800;font-size:.7rem;padding:4px 10px;border-radius:999px;border:0;background:var(--green3);color:var(--green);cursor:pointer;margin-left:8px;vertical-align:2px}
+.region{position:relative;border-radius:28px;overflow:hidden;min-height:380px;color:#fff;display:flex;align-items:flex-end;isolation:isolate}
+.region img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;will-change:transform}
+.region::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,28,20,.85),rgba(14,28,20,.05) 60%)}
+.region .tx{padding:30px}
+.region .eyebrow{color:#cfe8d8}
+.region h3{font-size:2.2rem;margin:10px 0 8px}
+.region p{margin:0;color:#e3ece5;max-width:28em}
+@media (max-width:860px){.loc{grid-template-columns:1fr}.box{padding:24px}.region{min-height:320px}.region .tx{padding:22px}}
+
+/* ---------- CTA ---------- */
+.cta{text-align:center;padding-block:120px;position:relative}
+.cta h2{font-size:clamp(2.6rem,7vw,5.4rem);margin:12px 0 18px}
+.cta p{max-width:30em;margin:0 auto 28px;color:var(--ink2)}
+.cta .actions{justify-content:center}
+.roof{width:120px;height:auto;margin:0 auto 6px;display:block;color:var(--green)}
+footer{border-top:1px solid var(--line);padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));font-size:.9rem;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media (max-width:600px){footer{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}}
+
+.wa{position:fixed;z-index:60;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.55);transition:transform .3s var(--ease),opacity .3s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px}
+.menu-open .wa{opacity:0;pointer-events:none}
+@media (max-width:600px){.wa{width:54px;height:54px;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px))}.wa svg{width:26px;height:26px}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="haus" viewBox="0 0 40 40"><path d="M6 19 20 7l14 12v15H6Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M6 19h28M20 7v12M13 26h14M16.5 34v-8h7v8" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#topo" aria-label="Hotel Haus, início"><svg><use href="#haus"/></svg><span><b>Hotel <i>Haus</i></b><small>Vila Pavão · ES</small></span></a>
+    <ul class="nav-links">
+      <li><a href="#quartos">O quarto</a></li>
+      <li><a href="#cafe">Café da manhã</a></li>
+      <li><a href="#reserva">Reservar</a></li>
+      <li><a href="#local">Localização</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn" href="#reserva">Reservar</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Menu">
+  <a href="#quartos">O quarto</a>
+  <a href="#cafe">Café da manhã</a>
+  <a href="#reserva">Reservar</a>
+  <a href="#local">Localização</a>
+  <a class="btn" style="align-self:flex-start;margin-top:24px" href="https://wa.me/5527998058838?text=Ol%C3%A1%2C%20Hotel%20Haus!%20Gostaria%20de%20saber%20sobre%20disponibilidade." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Falar no WhatsApp</a>
+</nav>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero fach" id="hero">
+    <div class="pin">
+      <div class="house" id="house"><img id="houseImg" src="https://images.unsplash.com/photo-1657040899601-fbcc8f6486f6?auto=format&fit=crop&w=1600&h=1100&q=78" alt="Quarto claro com janela e cama arrumada" fetchpriority="high"></div>
+      <svg class="outline" id="outline" aria-hidden="true"><path id="outPath" d=""/></svg>
+      <div class="hero-copy" id="heroCopy">
+        <span class="eyebrow"><svg><use href="#haus"/></svg>no centro de Vila Pavão</span>
+        <h1>Sinta-se <em>em casa.</em></h1>
+        <p class="lead">Quartos simples e bem cuidados, café da manhã caprichado e o atendimento atencioso dos proprietários. Pra quem vem a trabalho, a passeio ou em grupo.</p>
+        <div class="actions">
+          <a class="btn" href="#reserva">Ver datas e reservar</a>
+          <a class="btn ghost" href="#quartos">Conhecer</a>
+        </div>
+        <div class="proof"><span><b>4,2 ★</b> no Google · 203 avaliações</span><span>Café da manhã <b>incluso</b></span></div>
+      </div>
+      <div class="welcome" id="welcome"><h2>Bem-vindo ao <em>Haus.</em></h2><p>Haus · casa, em alemão</p></div>
+      <div class="cue" id="cue"><i></i>role para entrar</div>
+    </div>
+  </section>
+
+  <!-- COMODIDADES -->
+  <section class="s" id="quartos">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <div><span class="eyebrow"><svg><use href="#haus"/></svg>o quarto</span><h2>O básico, <em>bem feito</em></h2></div>
+        <p>Nada de luxo: quarto limpo, cama arrumada e tudo funcionando pra você descansar e seguir viagem.</p>
+      </div>
+      <div class="amen" id="amen"></div>
+      <p class="fine">Itens citados por hóspedes nas avaliações do Google. Confirme o que tem em cada quarto ao reservar.</p>
+    </div>
+  </section>
+
+  <!-- CAFÉ -->
+  <section class="s cafe" id="cafe">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <div><span class="eyebrow"><svg><use href="#haus"/></svg>incluso na diária</span><h2>O café da manhã <em>que os hóspedes comentam</em></h2></div>
+        <p>“Caprichado”, “excelente”, “excepcional”: é assim que ele aparece nas avaliações. Arraste pro lado.</p>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="track" id="track" tabindex="0" role="region" aria-label="Café da manhã"></div>
+      <div class="wrap">
+        <div class="s-ui">
+          <div class="prog" aria-hidden="true"><i id="prog"></i></div>
+          <div class="arrows"><button type="button" id="prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" id="next" aria-label="Próximo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
+        </div>
+        <p class="fine">Fotos ilustrativas. Itens citados em avaliações: pães, geleias, requeijão e sucos variados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVA -->
+  <section class="s" id="reserva">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <div><span class="eyebrow"><svg><use href="#haus"/></svg>reserva pelo WhatsApp</span><h2>Escolha as datas, <em>a gente confirma</em></h2></div>
+        <p>Preencha em segundos. O pedido chega pronto no WhatsApp do hotel, que responde com disponibilidade e valor.</p>
+      </div>
+      <div class="book">
+        <form class="form" id="bookForm" novalidate data-reveal>
+          <div class="fg"><span class="fl">Datas</span>
+            <div class="dates">
+              <label><span class="fl" style="margin-bottom:6px;letter-spacing:.1em">Check-in</span><input type="date" id="ci" aria-label="Data de check-in"></label>
+              <label><span class="fl" style="margin-bottom:6px;letter-spacing:.1em">Check-out</span><input type="date" id="co" aria-label="Data de check-out"></label>
+            </div>
+          </div>
+          <div class="fg"><span class="fl">Hóspedes</span>
+            <div class="guests"><b>Pessoas</b><div class="step"><button type="button" data-d="-1" aria-label="Menos hóspedes">−</button><output id="gs">2</output><button type="button" data-d="1" aria-label="Mais hóspedes">+</button></div></div>
+          </div>
+          <div class="fg"><span class="fl">Tipo de quarto</span><div class="rooms" id="rooms"></div></div>
+          <div class="fg"><span class="fl">Motivo da viagem</span>
+            <div class="pills" id="why"><label><input type="radio" name="why" value="Trabalho" checked><span>Trabalho</span></label><label><input type="radio" name="why" value="Passeio"><span>Passeio</span></label><label><input type="radio" name="why" value="Evento ou festa"><span>Evento ou festa</span></label><label><input type="radio" name="why" value="Grupo"><span>Grupo</span></label></div>
+          </div>
+          <div class="fg"><span class="fl">Seu nome</span><input type="text" id="nm" placeholder="Como podemos te chamar?" autocomplete="name"></div>
+        </form>
+        <aside class="ticket" aria-live="polite">
+          <span class="eyebrow">sua estadia</span>
+          <h3 id="tN">1 noite</h3>
+          <p class="nights" id="tD">—</p>
+          <div class="cal" id="cal" aria-hidden="true"></div>
+          <ul class="tl" id="tl"></ul>
+          <a class="btn" id="send" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir reserva no WhatsApp</a>
+          <small>Tipos de quarto de exemplo. Valores e disponibilidade são confirmados pelo hotel.</small>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="s" style="padding-top:30px">
+    <div class="wrap">
+      <div class="head" data-reveal><div><span class="eyebrow"><svg><use href="#haus"/></svg>quem já ficou</span><h2>O que dizem <em>os hóspedes</em></h2></div><p>Trechos reais de avaliações no Google. Arraste pro lado.</p></div>
+      <div class="revs" data-reveal>
+        <div class="score"><b>4,2</b><div><span>★★★★★</span><small>203 avaliações no Google</small></div></div>
+        <div class="rtrack" id="rtrack">
+          <figure class="rv"><div class="st">★★★★☆</div><p>“Quartos simples mas muito bem cuidados. Excelente café da manhã. Proprietários atenciosos e prestativos.”</p><small>Hóspede no Google</small></figure>
+          <figure class="rv"><div class="st">★★★★★</div><p>“Quartos limpos, com frigobar e ar-condicionado split. Fomos muito bem atendidos. Café da manhã caprichado. Preço muito bom. Recomendo!”</p><small>Hóspede no Google</small></figure>
+          <figure class="rv"><div class="st">★★★★★</div><p>“Fui muito bem recebido, boas acomodações, bom atendimento e um café da manhã excepcional.”</p><small>Hóspede no Google</small></figure>
+          <figure class="rv"><div class="st">★★★★★</div><p>“Ficamos em um grupo grande nesse hotel e fomos muito bem atendidos pelos proprietários, os quartos muito bem limpos.”</p><small>Hóspede no Google</small></figure>
+          <figure class="rv"><div class="st">★★★★★</div><p>“Como eu trabalho viajando, procuro preço e qualidade. Um dos melhores que me lembro de ter ficado.”</p><small>Hóspede no Google</small></figure>
+          <figure class="rv"><div class="st">★★★★☆</div><p>“Hotel simples, mas oferece boas instalações. Excelente relação custo-benefício e bom atendimento!”</p><small>Hóspede no Google</small></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL -->
+  <section class="s" id="local" style="padding-top:20px">
+    <div class="wrap loc">
+      <div class="box" data-reveal>
+        <span class="eyebrow"><svg><use href="#haus"/></svg>onde fica</span>
+        <h3>No centro, <em>perto de tudo</em></h3>
+        <div class="facts">
+          <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><p><b>R. Des. Farias Santos, 120</b><span>Centro · Vila Pavão – ES · 29843-000</span></p></div>
+          <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><p><b><span id="phone">(27) 99805-8838</span><button class="copy" id="copyPhone" type="button">Copiar</button></b><span>Reservas e informações</span></p></div>
+          <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span><p><b>Ao lado do posto, na ES-220</b><span>Fácil de achar pra quem chega de carro</span></p></div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/5527998058838?text=Ol%C3%A1%2C%20Hotel%20Haus!%20Gostaria%20de%20saber%20sobre%20disponibilidade." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Haus%20Vila%20Pav%C3%A3o" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+      <div class="region" data-reveal>
+        <img id="regionImg" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1686710420447-4bc82c1f8998?auto=format&fit=crop&w=1000&h=800&q=72" alt="Morros verdes ao amanhecer">
+        <div class="tx">
+          <span class="eyebrow">conheça a região</span>
+          <h3>Terra de tradição pomerana</h3>
+          <p>Vila Pavão é conhecida pela cultura pomerana, pelo brote e pela Pomitafro, a festa étnico-cultural da cidade. Uma boa base pra conhecer o norte do Espírito Santo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta fach">
+    <div class="wrap" data-reveal>
+      <svg class="roof" viewBox="0 0 120 50" aria-hidden="true"><path d="M4 46 60 6l56 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M60 6v40M32 26h56" fill="none" stroke="currentColor" stroke-width="2" opacity=".5"/></svg>
+      <span class="eyebrow">sua próxima parada</span>
+      <h2>A porta do Haus <em>tá aberta.</em></h2>
+      <p>Chame no WhatsApp pra saber a disponibilidade das suas datas.</p>
+      <div class="actions">
+        <a class="btn" href="#reserva">Escolher datas</a>
+        <a class="btn ghost" href="https://wa.me/5527998058838?text=Ol%C3%A1%2C%20Hotel%20Haus!" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span><b style="font-family:var(--f-head);font-weight:400;color:var(--ink);font-size:1.15rem">Hotel <span style="color:var(--green)">Haus</span></b> · Centro · Vila Pavão – ES</span>
+    <span>(27) 99805-8838</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5527998058838?text=Ol%C3%A1%2C%20Hotel%20Haus!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+'use strict';
+document.documentElement.classList.add('js');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const PHONE='5527998058838';
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const U=(id,w,h,q)=>`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=${q||74}`;
+const wa=t=>`https://wa.me/${PHONE}?text=${encodeURIComponent(t)}`;
+
+/* ---------- rolagem suave + menu ---------- */
+let lenis=null;
+if(!reduce&&window.Lenis){lenis=new Lenis({duration:1.25,smoothWheel:true});(function raf(t){lenis.raf(t);requestAnimationFrame(raf)})(performance.now());window.__lenis=lenis}
+const menuBtn=document.getElementById('menuBtn');
+function closeMenu(){document.body.classList.remove('menu-open');menuBtn.setAttribute('aria-expanded','false');if(lenis)lenis.start()}
+menuBtn.addEventListener('click',()=>{const o=!document.body.classList.contains('menu-open');document.body.classList.toggle('menu-open',o);menuBtn.setAttribute('aria-expanded',String(o));if(lenis)o?lenis.stop():lenis.start()});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length<2)return;const el=document.querySelector(id);if(!el)return;e.preventDefault();closeMenu();
+  const y=id==='#topo'?0:el.getBoundingClientRect().top+scrollY-76;lenis?lenis.scrollTo(y):scrollTo({top:y,behavior:reduce?'auto':'smooth'})}));
+addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('menu-open'))closeMenu()});
+
+/* ---------- hero: a casa abre com a rolagem ---------- */
+const hero=document.getElementById('hero'),house=document.getElementById('house'),houseImg=document.getElementById('houseImg'),outPath=document.getElementById('outPath'),outline=document.getElementById('outline'),heroCopy=document.getElementById('heroCopy'),welcome=document.getElementById('welcome'),cue=document.getElementById('cue');
+function houseStart(W,H){const mob=W<=900;
+  if(mob){const top=Math.min(H*.6,H-260),w=Math.min(W*.72,320),h=Math.max(150,H-top-40);return{cx:W/2,w,top:top+w*.28,bottom:top+w*.28+h*.62,roof:w*.36}}
+  const w=Math.min(W*.34,440),cx=Math.min(W*.72,W-w/2-40),bottom=H*.86,top=H*.34;return{cx,w,top,bottom,roof:w*.42}}
+function heroUpdate(){const r=hero.getBoundingClientRect(),W=innerWidth,H=innerHeight;if(r.bottom<0)return;
+  const p=reduce?0:clamp(-r.top/Math.max(1,r.height-H),0,1),e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+  const s=houseStart(W,H);
+  const L=lerp(s.cx-s.w/2,0,e),R=lerp(s.cx+s.w/2,W,e),T=lerp(s.top,0,e),B=lerp(s.bottom,H,e),roof=lerp(s.roof,0,e),cx=lerp(s.cx,W/2,e);
+  const pts=`${cx}px ${T-roof}px, ${R}px ${T}px, ${R}px ${B}px, ${L}px ${B}px, ${L}px ${T}px`;
+  house.style.clipPath=`polygon(${pts})`;house.style.webkitClipPath=`polygon(${pts})`;
+  outline.setAttribute('viewBox',`0 0 ${W} ${H}`);outline.setAttribute('width',W);outline.setAttribute('height',H);
+  outPath.setAttribute('d',`M${L-10} ${T+2} L${cx} ${T-roof-12} L${R+10} ${T+2}`);outline.style.setProperty('--ol',String(clamp(1-e*3,0,1)));
+  houseImg.style.transform=`scale(${1.12-e*.12})`;
+  house.style.setProperty('--ov',String(clamp((e-.5)*2,0,1)));
+  const fade=clamp(1-p*2.6,0,1);heroCopy.style.opacity=fade;heroCopy.style.visibility=fade<.02?'hidden':'visible';
+  heroCopy.style.translate=`0 ${-p*60}px`;
+  const w2=clamp((p-.55)/.3,0,1);welcome.style.opacity=w2;welcome.style.transform=`translateY(${(1-w2)*20}px)`;
+  cue.style.opacity=p>.03?0:1;
+  hdr.classList.toggle('over',e>.6&&p<1)}
+
+/* ---------- comodidades (citadas em avaliações) ---------- */
+const AM=[['Ar-condicionado split','Quarto fresquinho pra dormir bem.','<path d="M3 7h18v6H3z"/><path d="M7 17v2M12 17v3M17 17v2"/>'],['Frigobar','Água e bebida geladas no quarto.','<rect x="6" y="3" width="12" height="18" rx="2"/><path d="M6 10h12M9 6v2M9 13v3"/>'],['TV','Pra relaxar no fim do dia.','<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8"/>'],['Wi-Fi','Pra trabalhar ou falar com a família.','<path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/>'],['Banheiro no quarto','Limpo e bem cuidado.','<path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M6 12V5a2 2 0 0 1 4 0"/>'],['Café da manhã incluso','Pães, geleias, requeijão e sucos.','<path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17M8 2v4M12 2v4"/>'],['Água gelada','Bebedouro nos corredores.','<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>'],['Atendimento dos donos','Atencioso e prestativo, dizem os hóspedes.','<circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4.5 4.5 0 0 1 7 0"/>']];
+document.getElementById('amen').innerHTML=AM.map(a=>`<div class="am" data-reveal><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${a[2]}</svg></span><b>${a[0]}</b><span>${a[1]}</span></div>`).join('');
+
+/* ---------- café: slider com parallax interno ---------- */
+const CAFE=[['Pães fresquinhos','Pra começar o dia bem.','1530868156061-e5e8a5450c51'],['Geleias','Pra passar no pão quentinho.','1707092009843-2b5a919d17b0'],['Café passado','Aquele cheirinho de manhã.','1518057111178-44a106bad636'],['Sucos variados','Fresquinhos, na mesa do café.','1531025503751-fedbb2ad9de5'],['Mesa farta','Com calma, antes de pegar a estrada.','1704283735270-f973e7e9c14e'],['Requeijão e frios','Do jeito que o hóspede gosta.','1632848129232-f816b590e5e3']];
+const track=document.getElementById('track'),prog=document.getElementById('prog'),prevB=document.getElementById('prev'),nextB=document.getElementById('next');
+track.innerHTML=CAFE.map((c,i)=>`<article class="slide${i?'':' active'}" role="group" aria-roledescription="slide" aria-label="${i+1} de ${CAFE.length}: ${c[0]}"><div class="ph"><img src="${U(c[2],720,900,72)}" srcset="${U(c[2],480,600,70)} 480w, ${U(c[2],720,900,72)} 720w" sizes="(max-width:760px) 74vw, 380px" width="720" height="900" alt="${c[0]}" ${i>2?'loading="lazy"':''} decoding="async" draggable="false"></div><h3>${c[0]}</h3><p>${c[1]}</p></article>`).join('');
+const slides=[...track.children],imgs=slides.map(s=>s.querySelector('img'));
+let active=0,lockUntil=0,lastTouch=0;const bump=()=>{lastTouch=performance.now()};
+function setActive(i){if(i===active)return;slides[active].classList.remove('active');active=i;slides[active].classList.add('active')}
+function paint(){const sl=track.scrollLeft,max=track.scrollWidth-track.clientWidth,tr=track.getBoundingClientRect();prevB.disabled=sl<=4;nextB.disabled=sl>=max-4;prog.style.width=(max>0?clamp(sl/max,0,1)*100:100)+'%';
+  if(!reduce)for(const im of imgs){const r=im.parentElement.getBoundingClientRect();const c=(r.left+r.width/2-(tr.left+tr.width/2))/tr.width;im.style.transform=`translateX(${clamp(c,-1,1)*-8}%)`}}
+function goTo(i,smooth=true){i=clamp(i,0,slides.length-1);const max=track.scrollWidth-track.clientWidth;const left=Math.min(max,slides[i].offsetLeft-slides[0].offsetLeft);setActive(i);lockUntil=performance.now()+(smooth?800:50);track.scrollTo({left,behavior:smooth&&!reduce?'smooth':'auto'})}
+function syncActive(force){paint();if(!force&&performance.now()<lockUntil)return;const o=slides[0].offsetLeft,sl=track.scrollLeft,max=track.scrollWidth-track.clientWidth;let best=0,bd=Infinity;
+  for(let i=0;i<slides.length;i++){const d=Math.abs(slides[i].offsetLeft-o-sl);if(d<bd){bd=d;best=i}}if(sl>=max-4)best=slides.length-1;setActive(best)}
+let sTick=false;track.addEventListener('scroll',()=>{if(!sTick){sTick=true;requestAnimationFrame(()=>{syncActive();sTick=false})}},{passive:true});
+track.addEventListener('scrollend',()=>{lockUntil=0;syncActive(true)});
+['pointerdown','touchstart','wheel'].forEach(ev=>track.addEventListener(ev,()=>{lockUntil=0;bump()},{passive:true}));
+prevB.addEventListener('click',()=>{goTo(active-1);bump()});nextB.addEventListener('click',()=>{goTo(active+1);bump()});
+track.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();goTo(active+1);bump()}if(e.key==='ArrowLeft'){e.preventDefault();goTo(active-1);bump()}});
+let drag=null;
+track.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;drag={x:e.clientX,sl:track.scrollLeft,moved:false,id:e.pointerId,v:0,t:performance.now(),lx:e.clientX}});
+addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.id)return;const dx=e.clientX-drag.x;if(!drag.moved&&Math.abs(dx)>5){drag.moved=true;track.classList.add('dragging');try{track.setPointerCapture(drag.id)}catch(_){}}
+  if(drag.moved){track.scrollLeft=drag.sl-dx;const t=performance.now();drag.v=(e.clientX-drag.lx)/Math.max(1,t-drag.t);drag.lx=e.clientX;drag.t=t}});
+function endDrag(){if(!drag)return;const d=drag;drag=null;if(!d.moved)return;track.classList.remove('dragging');lockUntil=0;syncActive(true);let t=active;if(d.v<-0.35)t=active+1;else if(d.v>0.35)t=active-1;goTo(t);bump()}
+addEventListener('pointerup',endDrag);addEventListener('pointercancel',endDrag);
+let visible=false;new IntersectionObserver(([en])=>{visible=en.isIntersecting},{threshold:.4}).observe(track);
+track.addEventListener('mouseenter',()=>{lastTouch=Infinity});track.addEventListener('mouseleave',bump);
+if(!reduce)setInterval(()=>{if(!visible||document.hidden||performance.now()-lastTouch<6000)return;const max=track.scrollWidth-track.clientWidth;track.scrollLeft>=max-4?goTo(0):goTo(active+1)},4600);
+syncActive(true);addEventListener('resize',()=>syncActive(true));
+
+/* ---------- reserva ---------- */
+const ROOMS=[['Casal','cama de casal','1576354302919-96748cb8299e'],['Duas camas','solteiro ou dupla','1648383228240-6ed939727ad6'],['Família / grupo','3 pessoas ou mais','1719569332255-030dd517952f']];
+document.getElementById('rooms').innerHTML=ROOMS.map((r,i)=>`<label><input type="radio" name="room" value="${r[0]}" ${i===0?'checked':''}><span class="rc"><img src="${U(r[2],300,225,68)}" width="300" height="225" alt="" loading="lazy" decoding="async"><b>${r[0]}<small>${r[1]}</small></b></span></label>`).join('');
+const ci=document.getElementById('ci'),co=document.getElementById('co'),gsOut=document.getElementById('gs'),tN=document.getElementById('tN'),tD=document.getElementById('tD'),tl=document.getElementById('tl'),send=document.getElementById('send'),cal=document.getElementById('cal');
+const today=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));today.setHours(12,0,0,0);
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const parse=v=>{const [y,m,d]=v.split('-').map(Number);return new Date(y,m-1,d,12)};
+const DW=['dom','seg','ter','qua','qui','sex','sáb'];
+const fmt=d=>`${DW[d.getDay()]}, ${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}`;
+const t1=new Date(today);t1.setDate(t1.getDate()+1);
+ci.min=iso(today);ci.value=iso(today);co.min=iso(t1);co.value=iso(t1);
+let guests=2;
+document.querySelector('.guests .step').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;guests=clamp(guests+ +b.dataset.d,1,30);gsOut.textContent=guests;e.currentTarget.querySelector('[data-d="-1"]').disabled=guests<=1;
+  if(guests>=3&&document.querySelector('input[name=room]:checked').value!=='Família / grupo'){document.querySelector('input[name=room][value="Família / grupo"]').checked=true}
+  render()});
+ci.addEventListener('change',()=>{const a=parse(ci.value);const m=new Date(a);m.setDate(m.getDate()+1);co.min=iso(m);if(!co.value||parse(co.value)<=a)co.value=iso(m);render()});
+document.getElementById('bookForm').addEventListener('input',render);document.getElementById('bookForm').addEventListener('change',render);document.getElementById('bookForm').addEventListener('submit',e=>e.preventDefault());
+function render(){if(!ci.value||!co.value)return;const a=parse(ci.value),b=parse(co.value);let n=Math.round((b-a)/864e5);if(n<1){n=1}
+  tN.textContent=`${n} noite${n>1?'s':''}`;tD.textContent=`${fmt(a)} → ${fmt(b)}`;
+  cal.innerHTML=Array.from({length:14},(_,k)=>`<i class="${k<Math.min(n,14)?'on':''}"></i>`).join('');
+  const room=document.querySelector('input[name=room]:checked').value,why=document.querySelector('input[name=why]:checked').value,nm=document.getElementById('nm').value.trim();
+  tl.innerHTML=[['Hóspedes',`${guests} pessoa${guests>1?'s':''}`],['Quarto',room],['Motivo',why],['Café da manhã','incluso']].map(x=>`<li><span>${x[0]}</span><span>${x[1]}</span></li>`).join('');
+  const msg=`Olá, Hotel Haus! ${nm?`Meu nome é ${nm}. `:''}Gostaria de saber a disponibilidade:\n• Check-in: ${fmt(a)}\n• Check-out: ${fmt(b)} (${n} noite${n>1?'s':''})\n• ${guests} hóspede${guests>1?'s':''}\n• Quarto: ${room}\n• Motivo: ${why}\nQual o valor da diária?`;
+  send.href=wa(msg)}
+render();
+
+/* ---------- copiar telefone ---------- */
+document.getElementById('copyPhone').addEventListener('click',function(){const b=this;const ok=()=>{b.textContent='Copiado ✓';setTimeout(()=>{b.textContent='Copiar'},1600)};
+  const sl=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('phone'));const s=getSelection();s.removeAllRanges();s.addRange(r)};
+  if(navigator.clipboard)navigator.clipboard.writeText('27998058838').then(ok,sl);else sl()});
+
+/* ---------- aparecer ao rolar (sempre visível) ---------- */
+if(!reduce&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll('[data-reveal]').forEach(r=>{if(r.getBoundingClientRect().top>innerHeight*.95){r.classList.add('pre');io.observe(r)}})}
+
+/* ---------- loop de rolagem ---------- */
+const hdr=document.getElementById('hdr'),regionImg=document.getElementById('regionImg'),region=document.querySelector('.region');
+function update(){const y=scrollY;hdr.classList.toggle('solid',y>40);heroUpdate();
+  if(reduce)return;const r=region.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)regionImg.style.transform=`translateY(${(r.top-innerHeight/2)*-0.06}px) scale(1.12)`}
+let tick=false;addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(()=>{update();tick=false})}},{passive:true});
+addEventListener('resize',update);update();
+})();
+</script>
+</body>
+</html>
